@@ -8,6 +8,7 @@
 
 /** FUNCTIONS **/
 
+//initialize the graph with file with name filename
 void initG(graph *G, char* filename){
   FILE *fp = fopen(filename, "r");
   if(!fp)
@@ -61,4 +62,10 @@ void BFS(graph G, int n){
   printf("\n");
   return;
 }
+
+void DFS(graph G, int n);
+void degreeV(graph G);
+int isConnected(graph G);
+int isAdjacent(graph G, int A, int B);
+void cycle(graph G);
 
