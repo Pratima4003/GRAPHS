@@ -40,6 +40,7 @@ void componentsUtility(graph G, int v, int *visited){
   return;
 }
 
+//for number of components in graph
 void DFS2(graph G){
   int *visited = (int*)calloc(G.s, sizeof(int));
   if(!visited)
